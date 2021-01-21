@@ -1,13 +1,19 @@
 <h2>Celebrities Database</h2>
 
 {{#each celebrity}}
-<a href="/celebrities/{{_id}}"><p>{{name}}</p></a>
-
+<div>
+<a href="/celebrities/{{_id}}" class="links-that-are-invisible"><h3 class="heading-in-index-list-of-all-celebrities"> ★ {{name}}</h3></a>
+</div>
 
 <form method="POST" action="/celebrities/{{_id}}/delete">
-<button>Delete Celebrity</button>
-
+<label for="deleting-celebrity" hidden>Delete Celebrity</label>
+<button class="button-delete-celebrity">⚠ Delete Celebrity</button>
 </form>
+
 
 {{/each}}
 
+
+<form action="/celebrities/create">
+<button class="create-celebritites-button">Missing a Celebrity?</button>
+</form>

@@ -1,3 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Avenir', sans-serif;
+  box-sizing: inherit;
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+nav {
+  background-color: aquamarine;
+  width: inherit;
+}
+
+.create-celebritites-button {
+  margin-top: 3em;
+  background-color: aquamarine;
+  width: 14em;
+}
+
+.heading-in-index-list-of-all-celebrities {
+  margin-top: 2rem;
+}
+
+.links-that-are-invisible {
+  text-decoration: none;
+  color: purple;
+}
+
+.spotted-an-error {
+  margin-top: 2rem;
+  background-color: aquamarine;
+  width: 13em;
+}
+
+.button-delete-celebrity {
+  font-size: 0.7em;
+}
+
+.nav-link {
+  padding-right: 2em;
 }

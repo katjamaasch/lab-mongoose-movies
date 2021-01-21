@@ -1,0 +1,20 @@
+
+<h2>Please help us setting things straight</h2>
+
+{{#with singleCelebrity}}
+
+<form action="/celebrities" method="POST">
+
+<label for="celebrity-name" hidden>Name: </label>
+<input type="text" id="celebrity-name" name="name" placeholder="Name" value="{{name}}">
+
+<label for="celebrity-occupation" >Occupation: </label>
+<input type="text" id="celebrity-occupation" name="occupation" placeholder="occupation" value="{{occupation}}">
+
+<label for="celebrity-catchPhrase" hidden>Catch Phrase: </label>
+<input type="text" id="celebrity-catchPhrase" name="catchPhrase" placeholder="catchPhrase" value="{{catchPhrase}}">
+
+<button>Update!</button>
+</form>
+
+{{/with}}
