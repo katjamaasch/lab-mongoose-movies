@@ -1,0 +1,18 @@
+
+    <h1>Movie Database</h1>
+
+    {{#each movies}}
+
+    <a href="/movies/{{_id}}" class="links-that-are-invisible"><h2 class="heading-in-index-list-of-all-celebrities">🎥 {{title}}</h2></a>
+    
+    <form method="POST" action="/movies/{{_id}}/delete">
+    <button class="button-delete-celebrity">⚠ Delete Movie!</button>
+    </form>
+
+    {{/each}}
+
+
+    <form action="/movies/create" method="GET">
+    <label for="create-movie" hidden>Do you miss a movie in our list? </label>
+    <p><button class="create-new-xxx-button">Missing a movie?</button></p>
+    </form>

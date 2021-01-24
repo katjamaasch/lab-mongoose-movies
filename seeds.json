@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Mad Max: Fury Road",
+    "genre": "action",
+    "plot": "Driving through desert and back again"
+  },
+  {
+    "title": "Mary and Max",
+    "genre": "tragic-comedy",
+    "plot": "Two penfriends bridge the distance between Australia and the US...and between themselves."
+  },
+  {
+    "title": "Birdman",
+    "genre": "drama",
+    "plot": "An aged actor gets nuts."
+  }
+]

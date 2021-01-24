@@ -3,7 +3,7 @@
 
 {{#with singleCelebrity}}
 
-<form action="/celebrities" method="POST">
+<form action="/celebrities/{{_id}}" method="POST">
 
 <label for="celebrity-name" hidden>Name: </label>
 <input type="text" id="celebrity-name" name="name" placeholder="Name" value="{{name}}">

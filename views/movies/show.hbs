@@ -1,0 +1,17 @@
+
+    {{#with singlemovie}}
+    <h3 class="movie-title">{{title}}</h3>
+    <small class="genre">{{genre}}</small>
+    <h4>What it's about: </h4>
+    <p>{{plot}}</p>
+    <form action="/movies/{{_id}}/edit">
+    <button class="go-back">Something wrong here?</button>
+    </form>
+    <form action="/movies">
+    <button class="go-back">↩ Back to the list</button>
+    </form>
+    {{/with}}
+
+
+
+

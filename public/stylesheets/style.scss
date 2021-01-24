@@ -14,10 +14,11 @@ nav {
   width: inherit;
 }
 
-.create-celebritites-button {
-  margin-top: 3em;
+.create-new-xxx-button {
+  margin: 3em 0 3em 0;
   background-color: aquamarine;
   width: 14em;
+  border-radius: 20px;
 }
 
 .heading-in-index-list-of-all-celebrities {
@@ -29,16 +30,65 @@ nav {
   color: purple;
 }
 
-.spotted-an-error {
-  margin-top: 2rem;
-  background-color: aquamarine;
-  width: 13em;
-}
-
 .button-delete-celebrity {
   font-size: 0.7em;
+  background-color: transparent;
+  border: dotted 1px rgb(160, 159, 159);
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .nav-link {
   padding-right: 2em;
+  text-decoration: none;
+}
+
+.genre {
+  text-transform: uppercase;
+  color: rgb(151, 151, 151);
+}
+
+.movie-title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.Add-movie-button {
+  background-color: aquamarine;
+}
+
+.home-button {
+  width: 19em;
+  padding: 1em 0 1em 0;
+  margin-bottom: 2em;
+  background-color: aquamarine;
+  border-radius: 20px;
+}
+
+.create-movie-inputs {
+  display: flex;
+  flex-direction: column;
+  input {
+    margin-bottom: 2em;
+  }
+  button {
+    margin-top: 2em;
+  }
+}
+
+.go-back {
+  background-color: transparent;
+  border: dotted 1px rgb(129, 129, 129);
+  border-radius: 20px;
+  margin-top: 2em;
+  width: 15em;
+  cursor: pointer;
+}
+
+.create-button {
+  background-color: aquamarine;
+  border-radius: 20px;
+  width: 30%;
+  align-self: center;
+  padding: 0.5em 0 0.5em 0;
 }

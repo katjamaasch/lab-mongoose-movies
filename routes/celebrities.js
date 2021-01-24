@@ -1,6 +1,6 @@
 const express = require('express');
+const Movie = require('../models/movie');
 const Celebrity = require('./../models/celebrity');
-const Resource = require('./../models/celebrity');
 const router = new express.Router();
 
 router.get('/', (req, res, next) => {
@@ -35,6 +35,7 @@ router.get('/create', (req, res, next) => {
   res.render('celebrities/create');
 });
 
+
 router.get('/:id', (req, res, next) => {
   const celebrityId = req.params.id;
   Celebrity.findById(celebrityId)
@@ -55,22 +56,14 @@ router.post('/:id', (req, res, next) => {
     occupation: data.occupation,
     catchPhrase: data.catchPhrase
   })
-    .then(() => {
-      res.redirect('/');
+    .then((celebrity) => {
+      res.redirect(`/celebrities/${celebrity._id}`);
     })
     .catch((error) => {
       console.log(error);
       next(error);
     });
 });
-
-/*Locate the /celebrities/:id POST route in the routes/celebrities.js file.
-In that route's handler:
-Create an object with keys for each attribute of a celebrity (celebrity has 3 attributes. What were they again? Look back and review if you forgot).
-Values for those keys should come from the form submission (req.body).
-Call the Celebrity model’s update static and use the celebrity's id to specify which celebrity we are updating. Pass it the object with the new attributes as the second argument.
-If there is an error retrieving that celebrity, call the route's next function and return the error.
-If there is no error, redirect back to the list of celebrities*/
 
 router.post('/:id/delete', (req, res, next) => {
   const deleteCelebrity = req.params.id;

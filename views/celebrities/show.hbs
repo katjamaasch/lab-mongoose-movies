@@ -5,11 +5,18 @@
 <p>Occupation: {{occupation}}</p>
 <p>Catch Phrase: "{{catchPhrase}}"</p>
 
-<div class="spotted-an-error">
+
 <form action="/celebrities/{{_id}}/edit">
-<label for="update">You spotted an error?</label>
-<button>Yes!</button>
+<label for="update" hidden>Update!</label>
+<button class="go-back">You spotted an error?</button>
 </form>
-</div>
+
+
+<form action="/celebrities">
+<label for="Go back" hidden>Go back</label>
+<button class="go-back"> ↩ Back to the list</button>
+</form>
+
+
 
 {{/with}}
